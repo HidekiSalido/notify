@@ -1,0 +1,14 @@
+-- +goose Up
+CREATE TABLE IF NOT EXISTS location
+(
+    id BIGSERIAL PRIMARY KEY
+);
+
+CREATE TABLE IF NOT EXISTS cheque
+(
+    id BIGSERIAL PRIMARY KEY
+);
+
+-- +goose Down
+DROP TABLE IF EXISTS location;
+DROP TABLE IF EXISTS cheque;
